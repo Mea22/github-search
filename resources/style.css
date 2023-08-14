@@ -1,0 +1,438 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+    height: 100vh;
+    background: #F6F8FF;
+    margin: 0px 24px 0px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    color: #222731;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    height: 39px;
+    margin-bottom: 35px;
+    margin-top: 31px;
+    width: 100%;
+}
+.theme{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border: 0;
+    background-color: #F6F8FF;
+}
+.theme-color{
+    color: #697C9A;
+    text-align: right;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.5px;
+}
+.icon-sun{
+    display: none;
+}
+
+.search-cont{
+    position: relative;
+    margin-bottom: 16px;
+}
+.search-logo{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    left: 16px;
+    top: 20px;
+}
+.submit{
+    position: absolute;
+    z-index: 1;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 10px;
+    border: 0;
+    background: #0079FF;
+    width: 84px;
+    height: 46px;
+    left: 240px;
+    top: 6.5px;
+    padding: 0;
+}
+.search-input{
+    position: relative;
+    width: 327px;
+    height: 58px;
+    border-radius: 15px;
+    background: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    padding-left: 45px;
+    border: 0;
+    color: #4B6A9B;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    outline: none;
+    text-decoration: none;
+}
+.search-input::-webkit-search-cancel-button{
+    display: none;
+}
+.white::placeholder{
+    color: #FFF;
+}
+.error{
+    display: none;
+    position: absolute;
+    color: #F74646;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    left: 148px;
+    top: 16px;
+}
+
+
+main{
+    border-radius: 15px;
+    background: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    padding: 32px 24px 48px;
+    margin-bottom: 79px;
+}
+.avatar-cont{
+    display: flex;
+    align-items: center;
+    gap: 19.5px;
+    margin-bottom: 34px;
+}
+.avatar{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.name{
+    color: #2B3442;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.user-link{
+    color: #0079FF;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+.time{
+    color: #697C9A;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.bio{
+    color: #4B6A9B;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 23px;
+}
+.repo-followers-following{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 10px;
+    background: #F6F8FF;
+    padding: 18.5px 14px;
+    margin-bottom: 24px;
+}
+.repos,
+.followers,
+.following{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.repos-header,
+.followers-header,
+.following-header{
+    color: #4B6A9B;
+    text-align: center;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.repos-number,
+.followers-number,
+.following-number{
+    color: #2B3442;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.place-web,
+.twitter-company{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow: hidden;
+}
+.place,
+.web-link,
+.twitter,
+.company{
+    display: flex;
+}
+.contact p,
+.website{
+    color: #4B6A9B;
+    font-family: Space Mono;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+.place{
+    gap: 19px;
+}
+.web-link,
+.twitter,
+.company{
+    gap: 13px;
+}
+.twitter{
+    opacity: 0.5;
+}
+
+.twitter-link{
+    color: #4B6A9B;
+}
+@media only screen and (min-width: 768px){
+    body{
+        margin: 0px 97px 0px;
+    }
+    header{
+        margin-top: 140px;
+    }
+    .search-cont{
+        margin-bottom: 24px;
+    }
+    .search-logo{
+        width: 24px;
+        height: 24px;
+        left: 32px;
+        top: 23px;
+    }
+    .submit{
+        font-size: 16px;
+        width: 106px;
+        height: 50px;
+        left: 457px;
+        top: 9.5px;
+    }
+    .search-input{
+        width: 573px;
+        height: 69px;
+        padding-left: 80px;
+        font-size: 18px;
+    }
+    .error{
+        display: none;
+        font-size: 15px;
+        left: 346px;
+        top: 20px;
+    }
+    main{
+        padding: 40px;
+        margin-bottom: 236px;
+    }
+    .avatar-cont{
+        gap: 41px;
+        margin-bottom: 24px;
+    }
+    .avatar{
+        width: 117px;
+        height: 117px;
+    }
+    .name{
+        font-size: 26px;
+    }
+    .user-link{
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+    .time{
+        font-size: 15px;
+    }
+    .bio{
+        color: #4B6A9B;
+        margin-bottom: 32px;
+    }
+    .repo-followers-following{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        border-radius: 10px;
+        background: #F6F8FF;
+        padding: 15px 96px 17px 32px;
+        margin-bottom: 30px;
+    }
+    .repos-header,
+    .followers-header,
+    .following-header{
+        font-size: 13px;
+        
+    }
+    .repos-number,
+    .followers-number,
+    .following-number{
+        text-align: left;
+        font-size: 22px;
+    }
+    .contact{
+        display: flex;
+        flex-direction: row;
+        gap: 65px;
+        justify-content: space-between;
+    }
+    .contact div{
+        display: flex;
+        width: 100%;
+        font-size: 15px;
+    }
+    .place-web{
+        gap: 19px;
+    }
+    .twitter-company{
+        gap: 19px;
+    }
+    .contact p,
+    .website{
+        font-size: 15px;
+        
+    }
+    
+    
+}
+@media only screen and (min-width: 1440px){
+    body{
+        margin: 0px 355px 0px;
+    }
+    header{
+        margin-top: 144px;
+    }
+    .theme:hover{
+        cursor: pointer;
+    }
+    .theme:hover .theme-color{
+        color:#222731;
+    }
+   
+    .theme:hover .icon-sun{
+        filter: invert(88%) sepia(25%) saturate(6108%) hue-rotate(188deg) brightness(93%) contrast(77%);
+    }
+    
+    .theme:hover .icon-moon{
+        filter: invert(12%) sepia(33%) saturate(400%) hue-rotate(182deg) brightness(96%) contrast(93%);
+    }        
+    .search-input:hover{
+        cursor: pointer;
+    }
+    .submit{
+        left: 614px;
+    }
+    .submit:hover{
+        cursor: pointer;
+        background-color: #60ABFF;
+    }
+    .search-input{
+        width: 730px;
+    }
+    .error{
+        left: 505px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 634px;
+        padding: 48px;
+        margin-bottom: 170px;
+    }
+    .avatar-cont{
+        align-items: flex-start;
+        gap: 37px;
+        margin-bottom: 24px;
+        width: 100%;
+    }
+    .avatar-info{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .name{
+        font-size: 26px;
+    }
+    .user-link{
+        margin-bottom: 20px;
+    }
+    .time{
+        display: flex;
+        align-items: center;
+        height: 38px;
+        font-size: 15px;
+    }
+    .info{
+        max-width: 480px;
+       margin-left: 155px;
+    }
+    .bio{
+        font-size: 15px;
+        margin-bottom: 32px;
+        margin-top: -60px;
+    }
+    .repo-followers-following{
+        margin-bottom: 37px;
+    }
+    
+    .website:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+

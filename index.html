@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./resources/assets/favicon-32x32.png">
+    <link rel="stylesheet" href="./resources/reset.css">
+    <link rel="stylesheet" href="./resources/style.css">
+    <title>Github search</title>
+</head>
+<body class="body">
+    <header>
+        <p class="header">devfinder</p>
+        <button class="theme active">
+            <p class="theme-color">DARK</p>
+            <img src="./resources/assets/icon-moon.svg" alt="icon-moon" class="icon-moon">
+            <img src="./resources/assets/icon-sun.svg" alt="icon-moon" class="icon-sun">
+        </button>
+    </header>
+    <div class="search-cont">
+        <img src="./resources/assets/icon-search.svg" alt="icon-search" class="search-logo">
+        <input type="search" class="search-input" placeholder="Search GitHub username…">
+        <p class="error">No results</p>
+        <input type="submit" class="submit">
+    </div>
+
+    <main>
+        <div class="avatar-cont">
+            <img src="./resources/assets/Oval.svg" class="avatar" alt="avatar">
+            <div class="avatar-info"> 
+                <div class="name-link">
+                    <h3 class="name">The Octocat</h3>
+                    <a class="user-link" href="#">@octocat</a>
+                </div>
+                
+                <p class="time">Joined 25 Jan 2011</p>
+            </div>
+        </div>
+        <div class="info">
+            <p class="bio">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>
+            <div class="repo-followers-following">
+                <div class="repos">
+                    <p class="repos-header">Repos</p>
+                    <p class="repos-number">8</p>
+                </div>
+                <div class="followers">
+                    <p class="followers-header">Followers</p>
+                    <p class="followers-number">3938</p>
+                </div>
+                <div class="following">
+                    <p class="following-header">Following</p>
+                    <p class="following-number">9</p>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="place-web">
+                    <div class="place">
+                        <img src="./resources/assets/icon-location.svg" alt="icon-location" class="filter">
+                        <p class="location change">San Francisco</p>
+                    </div>
+                    <div class="web-link">
+                        <img src="./resources/assets/icon-website.svg" alt="icon-website" class="filter">
+                        <a href="#" class="website change">https://github.blog</a>
+                    </div>
+                </div>
+                <div class="twitter-company">
+                    <div class="twitter">
+                        <img src="./resources/assets/icon-twitter.svg" alt="icon-twitter" class="filter">
+                        <a class="twitter-link change">Not Available</a>
+                    </div>
+                    <div class="company">
+                        <img src="./resources/assets/icon-company.svg" alt="icon-company" class="filter">
+                        <p class="company-link change">@github</p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+       
+    </main>
+    <script src="./resources/script.js"></script>
+    <script src="./resources/theme.js"></script>
+</body>
+</html>
